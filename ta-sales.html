@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Airport Transfers | Excursions &amp; Transportation Punta Cana, Cancun, Puerto Vallarta, Montego Bay | Amstar DMC</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/ta.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__top-section">
+        <div class="page-header__row page-top">
+          <form class="site-search">
+            <input type="text" placeholder="Search" class="site-search__input">
+            <button class="site-search__button"></button>
+          </form><a href="./cart.html" class="shopping-cart-action">
+             
+            <svg class="cart-icon" viewBox="0 0 512 474" width="21" height="19"><path d="M512 115.2c0-19-4-26-24-25.6h-344l-10-64c-1-19-11-26-31-26h-77c-19 0-26 6-26 26v13c0 20 7 26 26 26h48l42 243c4 13 17 25 38 26h281c22 0 33-5 38-26l38-192zm-90 154h-253l-19-115h294l-22 115zm-256 154c0 28 23 51 51 51 28 0 51-23 51-51 0-28-23-51-51-51-28 0-51 23-51 51zm166 0c0 28 23 51 51 51s51-23 51-51c0-28-23-51-51-51s-51 23-51 51.2z"/></svg><span class="shopping-cart-action__value">0</span></a>
+          <ul class="user-actions">
+            <li class="user-action-item">
+              <button id="register-dialog-trigger" type="button" data-id="register-dialog" class="user-action btn js-dialog-button">Register</button>
+            </li>
+            <li class="user-action-item">
+              <button id="login-dialog-trigger" type="button" data-id="login-dialog" class="user-action btn js-dialog-button user-action">Login</button>
+            </li>
+            <li class="user-action-item">
+              <button id="travel-agent-dialog-trigger" type="button" data-id="travel-agent-dialog" class="user-action btn js-dialog-button user-action">Travel Agents</button>
+            </li>
+            <li class="user-action-item"><a href="#" class="user-action btn user-action">Logout</a></li>
+            <li class="user-action-item"><a href="./cart.html" class="user-action btn user-action">Shopping Cart</a></li>
+          </ul>
+        </div>
+      </div>
+      <nav class="top-nav-box">
+        <button id="menu-trigger" type="button" class="menu-trigger"><span class="menu-trigger__bar"></span></button>
+        <ul id="top-nav" class="top-nav top-nav--first-level">
+          <li class="top-nav__item"><a href="./index.html" class="top-nav__item-title">Home</a></li>
+          <li class="top-nav__item"><a href="./airport_transfers.html" class="top-nav__item-title">Airport Transfers</a></li>
+          <li class="top-nav__item"> <span class="top-nav__item-title top-nav__item-title--submenu js-submenu-trigger">Destinations</span>
+            <ul class="top-nav top-nav__submenu top-nav--second-level">
+              <li class="top-nav__item"><a href="./destinations.html" class="top-nav__item-title top-nav__item-title--submenu js-submenu-trigger">Mexico</a>
+                <ul class="top-nav top-nav__submenu top-nav--third-level">
+                  <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Acapulco</a></li>
+                  <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Cancun</a></li>
+                  <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Cozumel</a></li>
+                  <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Huatulco</a></li>
+                  <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Ixtapa</a></li>
+                  <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Los Cabos</a></li>
+                  <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Puerto Vallarta</a></li>
+                  <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Riviera Maya</a></li>
+                </ul>
+              </li>
+              <li class="top-nav__item"><a href="./destinations.html" class="top-nav__item-title top-nav__item-title--submenu js-submenu-trigger">Dominican</a>
+                <ul class="top-nav top-nav__submenu top-nav--third-level">
+                  <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">La Romana</a></li>
+                  <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Punta Cana</a></li>
+                </ul>
+              </li>
+              <li class="top-nav__item"><a href="./destinations.html" class="top-nav__item-title top-nav__item-title--submenu js-submenu-trigger">Jamaica</a>
+                <ul class="top-nav top-nav__submenu top-nav--third-level">
+                  <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Lucea</a></li>
+                  <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Montego Bay</a></li>
+                  <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Negril</a></li>
+                  <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Ocho Rios</a></li>
+                  <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Runaway Bay</a></li>
+                  <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Trelawny</a></li>
+                </ul>
+              </li>
+              <li class="top-nav__item"><a href="./destinations.html" class="top-nav__item-title top-nav__item-title--submenu js-submenu-trigger">Costa Rica</a>
+                <ul class="top-nav top-nav__submenu top-nav--third-level">
+                  <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Guanacaste</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="top-nav__item"><a href="./tours_and_activities.html" class="top-nav__item-title">Tours &amp; Activities</a></li>
+          <li class="top-nav__item"><a href="./car-rental.html" class="top-nav__item-title">Car Rental</a></li>
+          <li class="top-nav__item"><a href="./about_us.html" class="top-nav__item-title">About Us</a></li>
+          <li class="top-nav__item"><a href="./contact_us.html" class="top-nav__item-title">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="ta-page-main">
+      <div class="ta-top-section"><a href="./index.html" class="ta-logo-wrapper"><img src="./img/logo.png" alt="Amstar dmc homepage" class="site-logo"></a>
+        <div class="ta-client">
+          <div class="ta-client__portrait"><img src="./img/profile-picture.png" alt=""></div>
+          <div class="ta-client__welcome">Welcome, 
+            <div class="ta-client__name">Mr. John Smith</div>
+          </div>
+          <div class="ta-client__hotline">Travel Agent Hotline <a href="tel:8773294461" class="ta-client__hotline-number">1 (877) 329 4461</a></div>
+        </div>
+        <h1 class="ta-heading"><span class="ta-client-number">Client No. 22113</span>Travel Agents Hub</h1>
+      </div>
+      <div class="ta-main-nav">
+        <div class="ta-nav-swiper swiper-container js-ta-nav">
+          <ul class="ta-nav swiper-wrapper">
+            <li class="ta-nav__item swiper-slide"><a href="./ta-dashboard.html" class="ta-nav-tile ta-nav-tile--dashboard">
+                <div class="ta-nav-tile__title">Dashboard</div></a>
+            </li>
+            <li class="ta-nav__item swiper-slide"><a href="./ta-news.html" class="ta-nav-tile ta-nav-tile--news">
+                <div class="ta-nav-tile__title">News &amp; Noteworthy</div></a>
+            </li>
+            <li class="ta-nav__item swiper-slide"><a href="./ta-sales.html" class="ta-nav-tile ta-nav-tile--sales current">
+                <div class="ta-nav-tile__title">Sales Materials</div></a>
+            </li>
+            <li class="ta-nav__item swiper-slide"><a href="./ta-brand-guidelines.html" class="ta-nav-tile ta-nav-tile--brand">
+                <div class="ta-nav-tile__title">Brand Guidelines</div></a>
+            </li>
+            <li class="ta-nav__item swiper-slide"><a href="./ta-contact.html" class="ta-nav-tile ta-nav-tile--contact">
+                <div class="ta-nav-tile__title">Contact Us</div></a>
+            </li>
+            <li class="ta-nav__item swiper-slide"><a href="#" class="ta-nav-tile ta-nav-tile--policies">
+                <div class="ta-nav-tile__title">Amstar Policies</div></a></li>
+            <li class="ta-nav__item swiper-slide"><a href="./ta-settings.html" class="ta-nav-tile ta-nav-tile--settings">
+                <div class="ta-nav-tile__title">Settings</div></a>
+            </li>
+            <li class="ta-nav__item swiper-slide"><a href="./ta-bank-details.html" class="ta-nav-tile ta-nav-tile--bank-details">
+                <div class="ta-nav-tile__title">Bank Details</div></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="ta-main">
+        <div class="ta-main-header clearfix">
+          <ul class="ta-hub-nav">
+            <li class="ta-hub-nav__item"><a href="#" class="ta-tile">
+                <div class="ta-tile-icon ta-tile-icon--small ta-tile-icon--sales ta-tile-icon--newsletter">
+                  <div class="ta-tile-icon__title">Digital Brochures</div>
+                </div></a></li>
+            <li class="ta-hub-nav__item"><a href="#" class="ta-tile">
+                <div class="ta-tile-icon ta-tile-icon--small ta-tile-icon--sales ta-tile-icon--destinations-news">
+                  <div class="ta-tile-icon__title">Maps</div>
+                </div></a></li>
+          </ul>
+          <div class="ta-title-block">
+            <div class="ta-thumb-wrapper">
+              <div class="ta-tile-icon ta-tile-icon--thumb ta-tile-icon--sales ta-tile-icon--eflyers"></div>
+            </div>
+            <h2 class="ta-title">eFlyers</h2>
+            <p class="ta-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="sales-content">
+          <div class="guide-list">
+            <div class="guide-item">
+              <div class="guide-item__img-wrapper"><img src="./img/content/guide.jpg" alt="Guide" class="guide-item__img"></div>
+              <div class="guide-item__content">
+                <h3 class="guide-item__title">Mexico Travel Guide</h3>
+                <div class="guide-item__description">PDF File</div>
+                <div class="guide-item__size">755kb</div>
+                <ul class="res-links">
+                  <li><a href="#">Low Res</a></li>
+                  <li><a href="#">Hi Res</a></li>
+                </ul><a href="#" class="btn-guide">Preview</a><a href="#" class="btn-guide">Download</a>
+              </div>
+            </div>
+            <div class="guide-item">
+              <div class="guide-item__img-wrapper"><img src="./img/content/guide.jpg" alt="Guide" class="guide-item__img"></div>
+              <div class="guide-item__content">
+                <h3 class="guide-item__title">Mexico Travel Guide</h3>
+                <div class="guide-item__description">PDF File</div>
+                <div class="guide-item__size">755kb</div>
+                <ul class="res-links">
+                  <li><a href="#">Low Res</a></li>
+                  <li><a href="#">Hi Res</a></li>
+                </ul><a href="#" class="btn-guide">Preview</a><a href="#" class="btn-guide">Download</a>
+              </div>
+            </div>
+            <div class="guide-item">
+              <div class="guide-item__img-wrapper"><img src="./img/content/guide.jpg" alt="Guide" class="guide-item__img"></div>
+              <div class="guide-item__content">
+                <h3 class="guide-item__title">Mexico Travel Guide Mexico Travel Guide</h3>
+                <div class="guide-item__description">PDF File</div>
+                <div class="guide-item__size">755kb</div>
+                <ul class="res-links">
+                  <li><a href="#">Low Res</a></li>
+                  <li><a href="#">Hi Res</a></li>
+                </ul><a href="#" class="btn-guide">Preview</a><a href="#" class="btn-guide">Download</a>
+              </div>
+            </div>
+            <div class="guide-item">
+              <div class="guide-item__img-wrapper"><img src="./img/content/guide.jpg" alt="Guide" class="guide-item__img"></div>
+              <div class="guide-item__content">
+                <h3 class="guide-item__title">Mexico Travel Guide</h3>
+                <div class="guide-item__description">PDF File</div>
+                <div class="guide-item__size">755kb</div>
+                <ul class="res-links">
+                  <li><a href="#">Low Res</a></li>
+                  <li><a href="#">Hi Res</a></li>
+                </ul><a href="#" class="btn-guide">Preview</a><a href="#" class="btn-guide">Download</a>
+              </div>
+            </div><a href="#" class="guide-nav guide-nav--prev">
+              <div class="sr-only">Previous</div></a><a href="#" class="guide-nav guide-nav--next">
+              <div class="sr-only">Next</div></a>
+          </div>
+          <ul class="guide-pagination">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3 </a></li>
+            <li><a href="#">4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">
+      <div class="page-footer__row page-footer__row--dark">
+        <div class="page-footer__row-content page-footer__row-content--top">
+          <ul class="footer-nav footer-nav--top">
+            <li class="footer-nav__item"><a href="#" class="footer-nav__item-content">Tours &amp; Activities</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__item-content">About Us</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__item-content">Airport Transfers</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__item-content">Contact Us</a></li>
+          </ul>
+          <div class="page-footer__copyright">&copy; 2015 Amstar DMC &mdash; Best Excursions</div>
+        </div>
+      </div>
+      <div class="page-footer__row">
+        <div class="page-footer__row-content page-footer-middle">
+          <div class="footer-destinations">
+            <dl class="footer-destinations__list">
+              <dt class="footer-destinations__list-title"> <a href="./destinations.html">Mexico</a></dt>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Acapulco</a></dd>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Cancun</a></dd>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Cozumel</a></dd>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Huatulco</a></dd>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Ixtapa</a></dd>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Los Cabos</a></dd>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Puerto Vallarta</a></dd>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Riviera Maya</a></dd>
+            </dl>
+            <dl class="footer-destinations__list">
+              <dt class="footer-destinations__list-title"> <a href="./destinations.html">Dominican</a></dt>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">La Romana</a></dd>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Punta Cana</a></dd>
+            </dl>
+            <dl class="footer-destinations__list">
+              <dt class="footer-destinations__list-title"><a href="./destinations.html">Jamaica</a></dt>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Lucea</a></dd>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Montego Bay</a></dd>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Negril</a></dd>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Ocho Rios</a></dd>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Runaway Bay</a></dd>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Trelawny</a></dd>
+            </dl>
+            <dl class="footer-destinations__list">
+              <dt class="footer-destinations__list-title"><a href="./destinations.html">Costa Rica</a></dt>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Guanacaste</a></dd>
+            </dl>
+          </div>
+          <div class="follow-wrapper">
+            <div class="follow-label">Follow Us</div>
+            <ul class="follow">
+              <li class="follow__item"><a href="https://www.facebook.com/amstardmc" target="_blank" class="follow__link follow__link--facebook">
+                  <div class="follow__title">Facebook</div></a></li>
+              <li class="follow__item"><a href="https://twitter.com/amstardmc" target="_blank" class="follow__link follow__link--twitter">
+                  <div class="follow__title">Twitter</div></a></li>
+              <li class="follow__item"><a href="https://www.youtube.com/channel/UCN2C8sP75G1zVbBgZaUEyTg" target="_blank" class="follow__link follow__link--youtube">
+                  <div class="follow__title">Youtube</div></a></li>
+              <li class="follow__item"><a href="https://plus.google.com/+Amstardmc" target="_blank" class="follow__link follow__link--googleplus">
+                  <div class="follow__title">Google +</div></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer__row page-footer__row--dark"> 
+        <div class="page-footer__row-content page-footer__row-content--bottom">
+          <ul class="footer-nav">
+            <li class="footer-nav__item"><a href="#" class="footer-nav__item-content">Affiliate with Amstar</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__item-content">Terms &amp; Conditions</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__item-content">Cookies Policy</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__item-content">Privacy Policy</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__item-content">Contact Us</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__item-content">Amstar Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div id="register-dialog" class="dialog">
+      <form action="#">
+        <div class="dialog__title">Register your personal account</div>
+        <div class="flex-row">
+          <div class="flex-col">
+            <div class="form-field">
+              <select name="passenger-title" class="form-control jqueryui-selectmenu">
+                <option disabled selected>*Title</option>
+                <option value="1">Mr.</option>
+                <option value="2">Mrs.</option>
+                <option value="3">Ms.</option>
+                <option value="4">Dr.</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <input type="text" placeholder="*First Name" class="form-control">
+            </div>
+            <div class="form-field">
+              <input type="text" placeholder="*Last Name" class="form-control">
+            </div>
+            <div class="form-field">
+              <input type="text" placeholder="*City" class="form-control">
+            </div>
+            <div class="form-field">
+              <input type="text" placeholder="*Zip Code" class="form-control">
+            </div>
+            <div class="form-field">
+              <select name="#" class="form-control jqueryui-selectmenu">
+                <option disabled selected>*Country</option>
+                <option value="1">Option One</option>
+                <option value="2">Option Two</option>
+                <option value="3">Option Three</option>
+              </select>
+            </div>
+          </div>
+          <div class="flex-col">
+            <div class="form-field form-field--travel-agents-button">
+              <button type="button" data-id="travel-agent-dialog" class="btn btn-primary js-dialog-button">Travel Agents <br> Click Here</button>
+            </div>
+            <div class="form-group-flex">
+              <div class="form-field">
+                <input type="text" placeholder="*Area Code" class="form-control">
+              </div>
+              <div class="form-field">
+                <input type="text" placeholder="*Cel No." class="form-control">
+              </div>
+            </div>
+            <div class="form-field">
+              <input type="text" placeholder="*Email Address" class="form-control">
+            </div>
+            <div class="form-field">
+              <input type="password" placeholder="*Password" class="form-control">
+            </div>
+            <label class="form-field form-field--small form-checkbox form-checkbox--left form-checkbox--register">Include me <br> on your mailing list
+              <input type="checkbox"><span class="styled-checkbox styled-checkbox--left"></span>
+            </label>
+          </div>
+        </div>
+        <div class="form-field--center">
+          <button type="submit" class="btn btn-large btn-notice">Register</button>
+        </div>
+      </form>
+    </div>
+    <div id="login-dialog" class="dialog">
+      <form action="#">   
+        <div class="form-field">
+          <input type="text" placeholder="*Email Address" class="form-control">
+        </div>
+        <div class="form-field">
+          <input type="password" placeholder="*Password" class="form-control">
+        </div>
+        <div class="form-field--center">
+          <button type="submit" class="btn btn-large btn-notice">Login</button>
+        </div>
+      </form>
+      <div class="dialog__footer">
+        <button type="button" data-id="retrieve-password-dialog" class="btn btn-small btn-link js-retrieve-password-button">Forgot Password?</button>
+        <div class="dialog__separator"></div>
+        <button type="button" data-id="register-dialog" class="btn btn-small btn-link js-dialog-button">Register</button>
+        <div id="retrieve-password-dialog" class="dialog">
+          <form action="#">
+            <div class="dialog__title">Retrieve Password</div>
+            <div class="dialog__description">Complete the form below to receive an email with the authorization code needed to reset your password.    </div>
+            <div class="dialog__note">
+              <div class="dialog__note-title">EMAIL not found!</div>
+              <div class="dialog__note-title dialog__note-title--error">Authentication Failed!</div>
+              <div class="dialog__note-description">
+                <p>Sorry!</p>
+                <p>No user registered with that email address.</p>
+                <p>Please try again.</p>
+              </div>
+            </div>
+            <div class="form-field">
+              <input type="text" placeholder="*Email Address" class="form-control">
+            </div>
+            <label class="form-field">Enter the security code below
+              <input type="text" class="form-control">
+            </label>
+            <div class="form-field"><img src="./img/captcha.jpg" alt="Captcha"></div>
+            <div class="form-field--center">
+              <button type="submit" class="btn btn-large btn-notice">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="dialog__arrow"></div>
+    </div>
+    <div id="travel-agent-dialog" class="dialog travel-agent-dialog">
+      <form action="#">
+        <div class="flex-row">
+          <div class="flex-col dialog__column">
+            <div class="dialog__title">Create a Business Account </div>
+            <div class="form-field">
+              <select name="#" class="form-control jqueryui-selectmenu">
+                <option value="1">Travel Agent</option>
+                <option value="2">Tour Operator</option>
+                <option value="3">Hospitality Industry</option>
+                <option value="3">Event Planner</option>
+              </select>
+            </div>
+            <label class="form-field">Company Details
+              <input type="text" placeholder="*First Name" class="form-control">
+            </label>
+            <div class="form-field">
+              <input type="text" placeholder="*Company Legal Name" class="form-control">
+            </div>
+            <div class="form-field">
+              <input type="text" placeholder="*Industry ID#(i.e. IATA, CLIA, True)" class="form-control">
+            </div>
+            <div class="form-group-flex">
+              <div class="form-field">
+                <input type="text" placeholder="*Area Code" class="form-control">
+              </div>
+              <div class="form-field">
+                <input type="text" placeholder="*Cel No." class="form-control">
+              </div>
+            </div>
+            <div class="form-field">
+              <input type="text" placeholder="*Web Site" class="form-control">
+            </div>
+            <div class="form-field">
+              <input type="text" placeholder="Address" class="form-control">
+            </div>
+            <div class="form-field">
+              <input type="text" placeholder="City" class="form-control">
+            </div>
+            <div class="form-field">
+              <select name="passenger-title" class="form-control jqueryui-selectmenu">
+                <option disabled selected>*State</option>
+                <option value="1">Option One</option>
+                <option value="2">Option Two</option>
+                <option value="3">Option Three</option>
+                <option value="4">Option Four</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <select name="passenger-title" class="form-control jqueryui-selectmenu">
+                <option disabled selected>*Country</option>
+                <option value="1">Option One</option>
+                <option value="2">Option Two</option>
+                <option value="3">Option Three</option>
+                <option value="4">Option Four</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <input type="text" placeholder="*Zip Code" class="form-control">
+            </div>
+            <div class="form-field">
+              <select name="passenger-title" class="form-control jqueryui-selectmenu">
+                <option disabled selected>Franchise of / Affiliated to</option>
+                <option value="1">Option One</option>
+                <option value="2">Option Two</option>
+                <option value="3">Option Three</option>
+                <option value="4">Option Four</option>
+              </select>
+            </div>
+          </div>
+          <div class="flex-col flex-col-2-3">
+            <div class="dialog-img-wrapper"><img src="./img/logo.png" alt="Amstar dmc homepage" class="site-logo"></div>
+            <div class="flex-row travel-agent-row">
+              <div class="flex-col dialog__column">
+                <label class="form-field">Account Administrator
+                  <select name="passenger-title" class="form-control jqueryui-selectmenu">
+                    <option disabled selected>*Title</option>
+                    <option value="1">Mr.</option>
+                    <option value="2">Mrs.</option>
+                    <option value="3">Ms.</option>
+                    <option value="4">Dr.</option>
+                  </select>
+                </label>
+                <div class="form-field">
+                  <input type="text" placeholder="*First Name" class="form-control">
+                </div>
+                <div class="form-field">
+                  <input type="text" placeholder="*Last Name" class="form-control">
+                </div>
+                <div class="form-field profile-picture-field">
+                  <div class="profile-picture"><img src="./img/profile-picture.png" alt="Profile Picture" class="profile-picture__img"></div>
+                  <label for="profilePictureUpload" class="profile-picture__label">Upload Profile Picture<span class="btn btn-primary">Choose File</span>
+                    <input type="file" id="profilePictureUpload" class="sr-only">
+                  </label>
+                </div>
+                <div class="form-field">
+                  <input type="text" placeholder="*Email" class="form-control">
+                </div>
+                <div class="form-field">
+                  <input type="password" placeholder="*Password" class="form-control">
+                </div>
+              </div>
+              <div class="flex-col dialog__column-info">
+                <div class="dialog-img-wrapper"><img src="./img/content/info.png" alt=""></div>
+                <div class="dialog-img-wrapper"><img src="./img/content/info2.png" alt=""></div>
+              </div>
+            </div>
+            <label class="form-field form-field--small form-checkbox form-checkbox--left">I am the owner / manager and accept sole responsability for all bookings created on this web site under this agency ID and I agree to the <a href="./terms.html">terms and conditions</a>.
+              <input type="checkbox"><span class="styled-checkbox styled-checkbox--left"></span>
+            </label>
+            <div class="form-field--center">
+              <button type="submit" class="btn btn-large btn-notice">Create Business Account</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+    <script src="js/vendor/jquery-ui.min.js"></script>
+    <script src="js/vendor/swiper.jquery.min.js"></script>
+    <script src="js/vendor/jquery.timepicker.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

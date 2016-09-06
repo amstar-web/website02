@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Airport Transfers | Excursions &amp; Transportation Punta Cana, Cancun, Puerto Vallarta, Montego Bay | Amstar DMC</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+ <!--<header class="page-header">
+      <div class="page-header__top-section">
+        <div class="page-header__row page-top">
+          <form class="site-search">
+            <input type="text" placeholder="Search" class="site-search__input">
+            <button class="site-search__button"></button>
+          </form><a href="./cart.html" class="shopping-cart-action">
+             
+            <svg class="cart-icon" viewBox="0 0 512 474" width="21" height="19"><path d="M512 115.2c0-19-4-26-24-25.6h-344l-10-64c-1-19-11-26-31-26h-77c-19 0-26 6-26 26v13c0 20 7 26 26 26h48l42 243c4 13 17 25 38 26h281c22 0 33-5 38-26l38-192zm-90 154h-253l-19-115h294l-22 115zm-256 154c0 28 23 51 51 51 28 0 51-23 51-51 0-28-23-51-51-51-28 0-51 23-51 51zm166 0c0 28 23 51 51 51s51-23 51-51c0-28-23-51-51-51s-51 23-51 51.2z"/></svg><span class="shopping-cart-action__value">0</span></a>
+          <ul class="user-actions">
+            <li class="user-action-item">
+              <button id="register-dialog-trigger" type="button" data-id="register-dialog" class="user-action btn js-dialog-button">Register</button>
+            </li>
+            <li class="user-action-item">
+              <button id="login-dialog-trigger" type="button" data-id="login-dialog" class="user-action btn js-dialog-button user-action">Login</button>
+            </li>
+            <li class="user-action-item">
+              <button id="travel-agent-dialog-trigger" type="button" data-id="travel-agent-dialog" class="user-action btn js-dialog-button user-action">Travel Agents</button>
+            </li>
+            <li class="user-action-item"><a href="#" class="user-action btn user-action">Logout</a></li>
+            <li class="user-action-item"><a href="./cart.html" class="user-action btn user-action">Shopping Cart</a></li>
+          </ul>
+        </div>
+        <div class="page-header__row page-header__row--logo">
+          <div class="top-contacts top-contacts--header">
+            <div class="top-contacts__item">USA &amp; Canada: <a href="tel:18773294461">1 (877) 329-4461</a></div>
+            <div class="top-contacts__item">Mexico: <a href="tel:018002678270">01 800 267-8270</a></div>
+          </div><a href="./index.html" class="site-logo-wrapper"><img src="./img/logo.png" alt="Amstar dmc homepage" class="site-logo"></a>
+        </div>
+      </div>
+    </header>-->
+    
+    <div class="page-main">
+      <div class="page-section">
+        <h1 class="page-heading">Tour Details Page</h1>
+      </div>
+      
+      <div class="page-section flex-row">
+        <div class="flex-col flex-col-2-3"> 
+          <div class="page-block tour-gallery-section">
+        <!--<div class="tour-gallery-thumbs">
+          <div style="background-image: url('./img/content/about.jpg')" class="tour-gallery-thumb"></div>
+          <div style="background-image: url('./img/content/about2.jpg')" class="tour-gallery-thumb"></div>
+          <div style="background-image: url('./img/content/about3.jpg')" class="tour-gallery-thumb"></div>
+          <div style="background-image: url('./img/content/about.jpg')" class="tour-gallery-thumb"></div>
+        </div>-->
+        <div style="background-image: url('./img/content/about.jpg')" class="tour-gallery-main"></div>
+      </div>
+          <div class="jqueryui-tabs">
+              <div class="detail-tabs-titles">
+              <ul class="details-tabs-nav">
+                <li class="tab-title ui-state-active"><a href="#tours-d1">Tours Details</a></li>
+                <li class="tab-title"><a href="#tours-d2">Tour Options</a></li>
+                <li class="tab-title"><a href="#tours-d3">Reviews</a></li>
+                <li class="tab-title"><a href="#tours-d4">Highlights</a></li>
+                <li class="tab-title"><a href="#tours-d5">Calendar</a></li>
+                </ul>
+              </div>
+              <div id="tours-d1" class="page-block page-tour-content">
+                <div class="tour-price">
+                  <div class="tour-price__start"><span class="details-from">From:</span> <br> <span class="detailprice">$123</span> <span class="detail-usd">USD</span></div>
+                </div>
+                <div class="activities-type">
+                  <div class="icon-activities"><div class="icon-big-wave"></div></div>
+                  <div class="activities-type-title">Water Activities</div>
+                </div>
+                <div class="tour-details">
+                  <ul class="week-days">
+                    <li class="available">Sun</li>
+                    <li class="unavailable">Mon</li>
+                    <li class="available">Tue</li>
+                    <li class="available">Wed</li>
+                    <li class="available">Thu</li>
+                    <li class="available">Fri</li>
+                    <li class="available">Sat</li>
+                  </ul>
+                  <div class="tour-price__criteria"> 
+                    <div class="tour-price__criteria-item"><span class="tour-price__criteria-label">Adults: </span><span class="tour-price__criteria-content">Over 1.4 m  </span></div>
+                    <div class="tour-price__criteria-item"> <span class="tour-price__criteria-label">Children: </span><span class="tour-price__criteria-content">5 to 11 years old (1 to 1.4 m)</span></div>
+                  </div>
+                  <div class="tour-provider">Provider: 
+                    <span class="tour-price__criteria-content">Experiencias Xcaret</span>
+                  </div>
+                  <h2 class="page-subheading">Tour name</h2>
+                </div>
+                <div class="tour-detail-content">
+                    <div class="page-subheading-title">Enjoy the adventure!</div>
+                    <p>Fly over unspoiled Mayan jungle on zip lines and enjoy magnificent views, swim in underground rivers, ride an amphibious vehicle and raft through mystical underground waters. Experience Xplor the newest, hottest, coolest adventure park!</p>
+                    <p>Xplor adventure park in Riviera Maya is a unique underground world with thrilling circuits that invite you to rediscover your senses and emotions within nature. Enjoy the adventure while being guided from take off to landing. Fly over the jungle on zip lines with awesome views and refreshing water landings. Later, take on a challenge crossing hanging bridges and exploring 3.11 miles of fascinating jungle pathways on amphibious vehicles.</p>
+                    <p>&nbsp;</p>
+                    <div class="page-subheading-title">What&#39;s included</div>
+                    <ul>
+                      <li>English speaking guides</li>
+                      <li>Round trip</li>
+                      <li>Air conditioned transportation (optional)</li>
+                      <li>Entrance fees</li>
+                      <li>Zip-lining gear</li>
+                      <li>Snorkeling equipment</li>
+                      <li>Amphibious vehicles</li>
+                      <li>Lockers, showers, towels</li>
+                      <li>Lunch buffet &amp; drinks</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="know-container">
+                  <div class="page-subheading-title">What you need to know</div>
+                  <div class="know-column">
+                    <ul>
+                      <li>
+                        <div class="item-know-icon"><div class="icon-internet"></div></div>
+                        <div class="known-detail"><span class="tour-know__criteria-label">Language:</span> English</div>
+                      </li>
+                      <li>
+                        <div class="item-know-icon"><div class="icon-calendar-1"></div></div> 
+                        <div class="known-detail"><span class="tour-know__criteria-label">Season:</span> All Year Round</div>
+                      </li>
+                      <li>
+                        <div class="item-know-icon"><div class="icon-time"></div></div>
+                        <div class="known-detail"><span class="tour-know__criteria-label">Start Time:</span> 11:00 a.m.</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="know-column">
+                    <ul>
+                      <li>
+                        <div class="item-know-icon"><div class="icon-hourglass-2"></div></div>
+                        <div class="known-detail"><span class="tour-know__criteria-label">Duration:</span> 7 to 10 hrs. a.m.</div>
+                      </li>
+                      <li>
+                        <div class="item-know-icon"><div class="icon-route"></div></div>
+                        <div class="known-detail"><span class="tour-know__criteria-label">Includes Transport:</span> Yes</div>
+                      </li>
+                      <li>
+                        <div class="item-know-icon"><div class="icon-like-1"></div></div>
+                        <div class="known-detail"><span class="tour-know__criteria-label">Good Physical condition required:</span>  No</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="know-column">
+                    <ul>
+                      <li>
+                        <div class="item-know-icon"><div class="icon-old-man"></div></div>
+                        <div class="known-detail"><span class="tour-know__criteria-label">Suitable for the elderly:</span> Yes</div>
+                      </li>
+                      <li>
+                        <div class="item-know-icon"><div class="icon-smiling-baby"></div></div>
+                        <div class="known-detail"><span class="tour-know__criteria-label">Suitable for the children:</span> Yes</div>
+                      </li>
+                      <li>
+                        <div class="item-know-icon"><div class="icon-pregnancy-with-hearts"></div></div>
+                        <div class="known-detail"><span class="tour-know__criteria-label">Pregnant women allowed:</span> Yes</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div id="tours-d2" class="page-block page-tour-content">
+                <h2 class="page-subheading">Tour options</h2>
+                <hr>
+              </div>
+              <div id="tours-d3" class="page-block page-tour-content">
+                <h2 class="page-subheading">Reviews</h2>
+                <hr>
+              </div>
+              <div id="tours-d4" class="page-block page-tour-content">
+               <h2 class="page-subheading">Highlights</h2>
+                <hr>
+              </div>
+              <div id="tours-d5" class="page-block page-tour-content">
+                <h2 class="page-subheading">Calendar</h2>
+                 <hr>
+              </div>
+          </div>
+          <!--<div class="page-block">
+            <h2 class="page-subheading">Video</h2>
+            <div class="tour-video">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://www.youtube.com/embed/lL-WvXAOUhE" allowfullscreen class="embed-responsive-item"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="page-block">
+            <h3 class="block-heading">Top Three Tours in Cancun</h3>
+            <div class="link-blocks"><a href="./tour-details.html" class="link-block">
+                <div style="background-image: url('./img/content/about.jpg')" class="link-block__embed link-block__embed--bordered">
+                  <div class="link-block__number">1</div>
+                  <div class="link-block__main">Swim with dolphins</div>
+                </div></a><a href="./tour-details.html" class="link-block">
+                <div style="background-image: url('./img/content/about2.jpg')" class="link-block__embed link-block__embed--bordered">
+                  <div class="link-block__number">2</div>
+                  <div class="link-block__main">ATV Adventure</div>
+                </div></a><a href="./tour-details.html" class="link-block">
+                <div style="background-image: url('./img/content/about3.jpg')" class="link-block__embed link-block__embed--bordered">
+                  <div class="link-block__number">3</div>
+                  <div class="link-block__main">Safari jungle tour</div>
+                </div></a></div>
+          </div>
+          <div class="page-block">
+            <h3 class="block-heading">Recent Comments</h3>
+            <blockquote>“The most amazing experience, excellent attention and pure adrenaline running. Thanks for all the quality time!”
+              <cite>-Mary &amp; Tom Hanks</cite>
+            </blockquote>
+            <blockquote>“I like the nature, incredible escenarios, very recomendable!”
+              <cite>-Antonela &amp; Marcelo Pagani</cite>
+            </blockquote>
+            <blockquote>“The most amazing experience, excellent attention and pure adrenaline running. Thanks for all the quality time!”
+              <cite>-Mary &amp; Tom Hanks</cite>
+            </blockquote>
+          </div>-->
+        </div>
+        <div class="flex-col flex-col-1-3 tour-aside">
+          <div class="tour-availability__header">Price and Availability</div>
+          <div class="tour-availability">
+            <form action="./checkout.html"></form>
+            <div class="form-field">
+              <label>Select Date from Calendar
+                <input type="text" class="form-control form-control--searchbox datepicker-control js-datepicker--extended">
+              </label><span title="Help text should be here" class="form-tooltip form-tooltip--extend jqueryui-tooltip">?</span>
+            </div>
+             <div class="form-field">
+              <label>Select the start time:
+                <select name="tour-select-time" class="form-control form-control--searchbox jqueryui-selectmenu">
+                  <option value="1">Option One</option>
+                  <option value="2">Option Two</option>
+                  <option value="3">Option Three</option>
+                </select><span title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." class="form-tooltip form-tooltip--extend jqueryui-tooltip">?</span>
+              </label>
+            </div>
+            <div class="form-field">
+              <label>Select hotel &amp;/or pick up location &amp; time:
+                <select name="tour-select" class="form-control form-control--searchbox jqueryui-selectmenu">
+                  <option value="0">Please choose one</option>
+                  <option value="1">Option One</option>
+                  <option value="2">Option Two</option>
+                  <option value="3">Option Three</option>
+                </select><span title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." class="form-tooltip form-tooltip--extend jqueryui-tooltip">?</span>
+              </label>
+            </div>
+            <hr>
+            <div class="tour-availability__note">Select the Tour type option: </div>
+            <div class="tour-availability-type">
+              <form>
+                <input type="checkbox" name="option 1">  Xplor Entrance Only<br>
+                <input type="checkbox" name="oprion 2">  Xplor Deluxe
+              </form>
+            </div>
+            <div class="tour-availability__note">Select the # of pax for each option: </div>
+            <div class="tour-availability__title">Xplor Entrance Only</div>
+            <div class="form-group-flex-all">
+              <label class="form-field"><div class="form-client">Adult <span title="Over 12 years old" class="form-tooltip jqueryui-tooltip form-client-info">?</span></div><span class="tour-availability__prices">$104.00</span>
+                <select id="sb-adult" name="sb-adult" class="form-control form-control--searchbox jqueryui-selectmenu">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </label>
+              <label class="form-field"><div class="form-client">Children <span title="6 to 12 years old" class="form-tooltip jqueryui-tooltip form-client-info">?</span></div> <span class="tour-availability__prices">$52.00</span>
+                <select id="sb-child" name="sb-child" class="form-control form-control--searchbox jqueryui-selectmenu">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </label>
+              <label class="form-field"> <div class="form-client">Infant <span title="1 to 5 years old" class="form-tooltip jqueryui-tooltip form-client-info">? </span></div> <span class="tour-availability__prices">$45.00</span>
+                <select id="sb-infant" name="sb-infant" class="form-control form-control--searchbox jqueryui-selectmenu">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </label>
+            </div>
+            <hr>
+            <div class="tour-availability__supplements"> <span class="tour-availability__supplements-label">Add supplements: </span> <br>Protection Plus</div>
+            <label class="form-field form-field-1-3"><span class="tour-availability__prices">$99.00</span>
+              <select id="sb-infant" name="sb-infant" class="form-control form-control--searchbox jqueryui-selectmenu">
+                <option value="0">0 supplements</option>
+                <option value="1">1 passenger</option>
+                <option value="2">2 passengers</option>
+                <option value="3">3 passengers</option>
+              </select>
+            </label>
+            <hr>
+            <div class="tour-availability__total"> 
+              <div class="tour-availability__total-label">Total Amount: </div><span class="tour-uds__total-label">USD</span>$218.00 
+              <div class="tour-availability__note">All taxes included</div>
+            </div>
+            <div class="form-group-flex form-group-flex--between">
+              <!--<button type="button" class="btn btn-gray btn-small">Add to Cart</button>-->
+              <button type="submit" class="btn btn-notice btn-booking">Book Now</button>
+            </div>
+          </div>
+          <!--<h3 class="aside-heading">Includes</h3>
+          <div class="aside-section">
+            <ul class="nude-list"> 
+              <li>English speaking guides  </li>
+              <li>Round trip</li>
+              <li>Air conditioned transportation (optional)</li>
+              <li>Entrance fees</li>
+              <li>Zip-lining gear</li>
+              <li>Snorkeling equipment</li>
+              <li>Amphibious vehicles</li>
+              <li>Lockers, showers, towels</li>
+              <li>Lunch buffet &amp; drinks</li>
+            </ul>
+          </div>
+          <h3 class="aside-heading">Tour Options</h3>
+          <div class="aside-section">
+            <ul class="nude-list">
+              <li>Entrance Only option is also available.</li>
+              <li>Transportation is not included.</li>
+            </ul>
+          </div>
+          <h3 class="aside-heading">Important</h3>
+          <div class="aside-section">
+            <p>Wear swimsuit under comfortable clothing. Bring water shoes or sport sandals, biodegradable sunblock, hat, sunglasses and money for tips & souvenirs. (Tipping is optional)</p>
+            <p>Please note: If you are staying in Cozumel you will need to arrive to Playa del Carmen on your own via Ferry and meet at pick up location.</p>
+            <p>Pick up and drop off times will vary according to Hotel location.   </p>
+          </div>
+          <h3 class="aside-heading">Experiences</h3>
+          <div class="aside-section">
+            <p>Write a comment for this tour.</p>
+          </div>
+          <form action="#">
+            <div class="form-field">
+              <input type="text" placeholder="Your Name(s) here" class="comment-control">
+            </div>
+            <div class="form-field">
+              <textarea placeholder="Your comments here" class="comment-control"></textarea>
+            </div>
+            <div class="form-field form-field--right">
+              <input type="submit" value="Submit" class="btn btn-gray btn-comment">
+            </div>
+          </form>-->
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">
+      <div class="page-footer__row page-footer__row--dark">
+        <div class="page-footer__row-content page-footer__row-content--top">
+          <ul class="footer-nav footer-nav--top">
+            <li class="footer-nav__item"><a href="#" class="footer-nav__item-content">Tours &amp; Activities</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__item-content">About Us</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__item-content">Airport Transfers</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__item-content">Contact Us</a></li>
+          </ul>
+          <div class="page-footer__copyright">&copy; 2015 Amstar DMC &mdash; Best Excursions</div>
+        </div>
+      </div>
+      <div class="page-footer__row">
+        <div class="page-footer__row-content page-footer-middle">
+          <div class="footer-destinations">
+            <dl class="footer-destinations__list">
+              <dt class="footer-destinations__list-title"> <a href="./destinations.html">Mexico</a></dt>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Acapulco</a></dd>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Cancun</a></dd>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Cozumel</a></dd>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Huatulco</a></dd>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Ixtapa</a></dd>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Los Cabos</a></dd>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Puerto Vallarta</a></dd>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Riviera Maya</a></dd>
+            </dl>
+            <dl class="footer-destinations__list">
+              <dt class="footer-destinations__list-title"> <a href="./destinations.html">Dominican</a></dt>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">La Romana</a></dd>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Punta Cana</a></dd>
+            </dl>
+            <dl class="footer-destinations__list">
+              <dt class="footer-destinations__list-title"><a href="./destinations.html">Jamaica</a></dt>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Lucea</a></dd>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Montego Bay</a></dd>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Negril</a></dd>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Ocho Rios</a></dd>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Runaway Bay</a></dd>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Trelawny</a></dd>
+            </dl>
+            <dl class="footer-destinations__list">
+              <dt class="footer-destinations__list-title"><a href="./destinations.html">Costa Rica</a></dt>
+              <dd class="footer-destinations__item"><a href="./destinations.html" class="footer-destinations__item-title">Guanacaste</a></dd>
+            </dl>
+          </div>
+          <div class="follow-wrapper">
+            <div class="follow-label">Follow Us</div>
+            <ul class="follow">
+              <li class="follow__item"><a href="https://www.facebook.com/amstardmc" target="_blank" class="follow__link follow__link--facebook">
+                  <div class="follow__title">Facebook</div></a></li>
+              <li class="follow__item"><a href="https://twitter.com/amstardmc" target="_blank" class="follow__link follow__link--twitter">
+                  <div class="follow__title">Twitter</div></a></li>
+              <li class="follow__item"><a href="https://www.youtube.com/channel/UCN2C8sP75G1zVbBgZaUEyTg" target="_blank" class="follow__link follow__link--youtube">
+                  <div class="follow__title">Youtube</div></a></li>
+              <li class="follow__item"><a href="https://plus.google.com/+Amstardmc" target="_blank" class="follow__link follow__link--googleplus">
+                  <div class="follow__title">Google +</div></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer__row page-footer__row--dark"> 
+        <div class="page-footer__row-content page-footer__row-content--bottom">
+          <ul class="footer-nav">
+            <li class="footer-nav__item"><a href="#" class="footer-nav__item-content">Affiliate with Amstar</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__item-content">Terms &amp; Conditions</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__item-content">Cookies Policy</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__item-content">Privacy Policy</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__item-content">Contact Us</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__item-content">Amstar Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div id="register-dialog" class="dialog">
+      <form action="#">
+        <div class="dialog__title">Register your personal account</div>
+        <div class="flex-row">
+          <div class="flex-col">
+            <div class="form-field">
+              <select name="passenger-title" class="form-control jqueryui-selectmenu">
+                <option disabled selected>*Title</option>
+                <option value="1">Mr.</option>
+                <option value="2">Mrs.</option>
+                <option value="3">Ms.</option>
+                <option value="4">Dr.</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <input type="text" placeholder="*First Name" class="form-control">
+            </div>
+            <div class="form-field">
+              <input type="text" placeholder="*Last Name" class="form-control">
+            </div>
+            <div class="form-field">
+              <input type="text" placeholder="*City" class="form-control">
+            </div>
+            <div class="form-field">
+              <input type="text" placeholder="*Zip Code" class="form-control">
+            </div>
+            <div class="form-field">
+              <select name="#" class="form-control jqueryui-selectmenu">
+                <option disabled selected>*Country</option>
+                <option value="1">Option One</option>
+                <option value="2">Option Two</option>
+                <option value="3">Option Three</option>
+              </select>
+            </div>
+          </div>
+          <div class="flex-col">
+            <div class="form-field form-field--travel-agents-button">
+              <button type="button" data-id="travel-agent-dialog" class="btn btn-primary js-dialog-button">Travel Agents <br> Click Here</button>
+            </div>
+            <div class="form-group-flex">
+              <div class="form-field">
+                <input type="text" placeholder="*Area Code" class="form-control">
+              </div>
+              <div class="form-field">
+                <input type="text" placeholder="*Cel No." class="form-control">
+              </div>
+            </div>
+            <div class="form-field">
+              <input type="text" placeholder="*Email Address" class="form-control">
+            </div>
+            <div class="form-field">
+              <input type="password" placeholder="*Password" class="form-control">
+            </div>
+            <label class="form-field form-field--small form-checkbox form-checkbox--left form-checkbox--register">Include me <br> on your mailing list
+              <input type="checkbox"><span class="styled-checkbox styled-checkbox--left"></span>
+            </label>
+          </div>
+        </div>
+        <div class="form-field--center">
+          <button type="submit" class="btn btn-large btn-notice">Register</button>
+        </div>
+      </form>
+    </div>
+    <div id="login-dialog" class="dialog">
+      <form action="#">   
+        <div class="form-field">
+          <input type="text" placeholder="*Email Address" class="form-control">
+        </div>
+        <div class="form-field">
+          <input type="password" placeholder="*Password" class="form-control">
+        </div>
+        <div class="form-field--center">
+          <button type="submit" class="btn btn-large btn-notice">Login</button>
+        </div>
+      </form>
+      <div class="dialog__footer">
+        <button type="button" data-id="retrieve-password-dialog" class="btn btn-small btn-link js-retrieve-password-button">Forgot Password?</button>
+        <div class="dialog__separator"></div>
+        <button type="button" data-id="register-dialog" class="btn btn-small btn-link js-dialog-button">Register</button>
+        <div id="retrieve-password-dialog" class="dialog">
+          <form action="#">
+            <div class="dialog__title">Retrieve Password</div>
+            <div class="dialog__description">Complete the form below to receive an email with the authorization code needed to reset your password.    </div>
+            <div class="dialog__note">
+              <div class="dialog__note-title">EMAIL not found!</div>
+              <div class="dialog__note-title dialog__note-title--error">Authentication Failed!</div>
+              <div class="dialog__note-description">
+                <p>Sorry!</p>
+                <p>No user registered with that email address.</p>
+                <p>Please try again.</p>
+              </div>
+            </div>
+            <div class="form-field">
+              <input type="text" placeholder="*Email Address" class="form-control">
+            </div>
+            <label class="form-field">Enter the security code below
+              <input type="text" class="form-control">
+            </label>
+            <div class="form-field"><img src="./img/captcha.jpg" alt="Captcha"></div>
+            <div class="form-field--center">
+              <button type="submit" class="btn btn-large btn-notice">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="dialog__arrow"></div>
+    </div>
+    <div id="travel-agent-dialog" class="dialog travel-agent-dialog">
+      <form action="#">
+        <div class="flex-row">
+          <div class="flex-col dialog__column">
+            <div class="dialog__title">Create a Business Account </div>
+            <div class="form-field">
+              <select name="#" class="form-control jqueryui-selectmenu">
+                <option value="1">Travel Agent</option>
+                <option value="2">Tour Operator</option>
+                <option value="3">Hospitality Industry</option>
+                <option value="3">Event Planner</option>
+              </select>
+            </div>
+            <label class="form-field">Company Details
+              <input type="text" placeholder="*First Name" class="form-control">
+            </label>
+            <div class="form-field">
+              <input type="text" placeholder="*Company Legal Name" class="form-control">
+            </div>
+            <div class="form-field">
+              <input type="text" placeholder="*Industry ID#(i.e. IATA, CLIA, True)" class="form-control">
+            </div>
+            <div class="form-group-flex">
+              <div class="form-field">
+                <input type="text" placeholder="*Area Code" class="form-control">
+              </div>
+              <div class="form-field">
+                <input type="text" placeholder="*Cel No." class="form-control">
+              </div>
+            </div>
+            <div class="form-field">
+              <input type="text" placeholder="*Web Site" class="form-control">
+            </div>
+            <div class="form-field">
+              <input type="text" placeholder="Address" class="form-control">
+            </div>
+            <div class="form-field">
+              <input type="text" placeholder="City" class="form-control">
+            </div>
+            <div class="form-field">
+              <select name="passenger-title" class="form-control jqueryui-selectmenu">
+                <option disabled selected>*State</option>
+                <option value="1">Option One</option>
+                <option value="2">Option Two</option>
+                <option value="3">Option Three</option>
+                <option value="4">Option Four</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <select name="passenger-title" class="form-control jqueryui-selectmenu">
+                <option disabled selected>*Country</option>
+                <option value="1">Option One</option>
+                <option value="2">Option Two</option>
+                <option value="3">Option Three</option>
+                <option value="4">Option Four</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <input type="text" placeholder="*Zip Code" class="form-control">
+            </div>
+            <div class="form-field">
+              <select name="passenger-title" class="form-control jqueryui-selectmenu">
+                <option disabled selected>Franchise of / Affiliated to</option>
+                <option value="1">Option One</option>
+                <option value="2">Option Two</option>
+                <option value="3">Option Three</option>
+                <option value="4">Option Four</option>
+              </select>
+            </div>
+          </div>
+          <div class="flex-col flex-col-2-3">
+            <div class="dialog-img-wrapper"><img src="./img/logo.png" alt="Amstar dmc homepage" class="site-logo"></div>
+            <div class="flex-row travel-agent-row">
+              <div class="flex-col dialog__column">
+                <label class="form-field">Account Administrator
+                  <select name="passenger-title" class="form-control jqueryui-selectmenu">
+                    <option disabled selected>*Title</option>
+                    <option value="1">Mr.</option>
+                    <option value="2">Mrs.</option>
+                    <option value="3">Ms.</option>
+                    <option value="4">Dr.</option>
+                  </select>
+                </label>
+                <div class="form-field">
+                  <input type="text" placeholder="*First Name" class="form-control">
+                </div>
+                <div class="form-field">
+                  <input type="text" placeholder="*Last Name" class="form-control">
+                </div>
+                <div class="form-field profile-picture-field">
+                  <div class="profile-picture"><img src="./img/profile-picture.png" alt="Profile Picture" class="profile-picture__img"></div>
+                  <label for="profilePictureUpload" class="profile-picture__label">Upload Profile Picture<span class="btn btn-primary">Choose File</span>
+                    <input type="file" id="profilePictureUpload" class="sr-only">
+                  </label>
+                </div>
+                <div class="form-field">
+                  <input type="text" placeholder="*Email" class="form-control">
+                </div>
+                <div class="form-field">
+                  <input type="password" placeholder="*Password" class="form-control">
+                </div>
+              </div>
+              <div class="flex-col dialog__column-info">
+                <div class="dialog-img-wrapper"><img src="./img/content/info.png" alt=""></div>
+                <div class="dialog-img-wrapper"><img src="./img/content/info2.png" alt=""></div>
+              </div>
+            </div>
+            <label class="form-field form-field--small form-checkbox form-checkbox--left">I am the owner / manager and accept sole responsability for all bookings created on this web site under this agency ID and I agree to the <a href="./terms.html">terms and conditions</a>.
+              <input type="checkbox"><span class="styled-checkbox styled-checkbox--left"></span>
+            </label>
+            <div class="form-field--center">
+              <button type="submit" class="btn btn-large btn-notice">Create Business Account</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+    <script src="js/vendor/jquery-ui.min.js"></script>
+    <script src="js/vendor/swiper.jquery.min.js"></script>
+    <script src="js/vendor/jquery.timepicker.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
